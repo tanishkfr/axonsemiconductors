@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXON | Precision Silicon</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 10 L90 90 L10 90 Z' fill='%230047AB'/><path d='M50 25 L75 80 L25 80 Z' fill='%23FFFFFF'/><circle cx='50' cy='65' r='10' fill='%230047AB'/></svg>" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              onyx: '#0A0A0A',       // Deepest Black
+              charcoal: '#121212',   // Card Background
+              panel: '#1A1A1A',      // Lighter Panels
+              cobalt: '#0047AB',     // Primary Accent
+              azure: '#007AFF',      // Highlight (Keeping for compatibility)
+              signal: '#FF4D00',     // Alert/Action
+              success: '#10B981',    // Good Status
+              surface: '#F5F5F7',    // Light Mode Background
+              paper: '#FFFFFF',      // White element background
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px)",
+              'grid-pattern-dark': "linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)",
+              'dot-pattern': "radial-gradient(circle, #000000 1px, transparent 1px)",
+              'dot-pattern-dark': "radial-gradient(circle, #FFFFFF 1px, transparent 1px)",
+            },
+            backgroundSize: {
+              'grid': '40px 40px',
+              'dots': '20px 20px',
+            }
+          },
+        },
+      };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #F5F5F7;
+        color: #111111;
+        cursor: none;
+        overflow-x: hidden;
+      }
+      .dark-mode {
+        background-color: #0A0A0A;
+        color: #FFFFFF;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      /* Ticker Hollow Text Effect */
+      .text-stroke {
+        -webkit-text-stroke: 1px #E5E7EB;
+        color: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.33.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
